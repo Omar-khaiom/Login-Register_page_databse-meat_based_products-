@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Login to access your account and manage your memories.">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="image-slider">
+                <img src="images/raw-meat-table.jpg" class="slide active">
+                <img src="images/storage.jpg" class="slide">
+                <img src="images/meat-fork.jpg" class="slide">
+            </div>
+            <div class="overlay-text">
+                <h2>Freshness You Can Taste, Quality You Can Trust!</h2>
+            </div>
+        </div>
+
+        <!-- Login Section -->
+        <div class="form-section">
+            <h2>Login</h2> <a id="homeButton" href="index.html">Home</a>
+
+            <p>Don't have an account? <a href="register.html">Register Now</a></p>
+            <form action="login.php" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                <label for="user-type">Select User Type</label>
+                <select id="user-type" name="user_type" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="regular">Regular User</option>
+                    <option value="VENDOR">VENDOR</option>
+                    <option value="STORGEMANAGER">STORGE MANAGER</option>
+                    <option value="SLAUGHTER HOUSE MANAGER">SLAUGHTER HOUSE MANAGER</option>
+                    <option value="STOREMANAGER">STORE MANAGER</option>
+                    <option value="DISTRIBUTER">DISTRIBUTER</option>
+                </select>
+                
+                <button type="submit" class="create-account">Login</button>
+                <br><br/>
+                <br><br/>
+                
+                <div>
+                    <p> Unlock Your Full Experience By signing in !</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="slide.js"></script>
+</body>
+</html>
